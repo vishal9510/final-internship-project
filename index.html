@@ -68,6 +68,30 @@
                 height: 200px;
             }
         }
+
+        .new_badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 0.8rem;
+            padding: 5px 10px;
+        }
+
+        .product_img img {
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            border-radius: 6px;
+        }
+
+        .product_img img:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body h5 a:hover {
+            color: #007bff;
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -183,6 +207,174 @@
             </div>
         </div>
     </section>
+
+
+    <section class="products py-5 my-5 bg-light" id="products">
+        <div class="container">
+            <div class="section_title text-center mb-5">
+                <h1 class="text-capitalize font-weight-bold">Latest Products</h1>
+            </div>
+            <div class="row">
+                <!-- Product Card Template (Repeat this as needed) -->
+                <!-- Product 1 -->
+                <div class="col-md-4 col-12 mb-4">
+                    <div class="single_product card shadow-sm border-0 h-100">
+                        <div class="product_img position-relative">
+                            <a href="product_detail.html">
+                                <img src="assets/images/product1.png" class="card-img-top img-fluid" alt="Product 1">
+                            </a>
+                            <span class="badge badge-danger badge-pill new_badge w-25">New</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="product-ratting mb-2 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h5 class="card-title mb-1"><a href="product_detail.html" class="text-dark">Green Dress with
+                                    details</a></h5>
+                            <div class="price font-weight-bold text-success">
+                                ₹400
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-4 col-12 mb-4">
+                    <div class="single_product card shadow-sm border-0 h-100">
+                        <div class="product_img position-relative">
+                            <a href="product_detail.html">
+                                <img src="assets/images/product2.png" class="card-img-top img-fluid" alt="Product 2">
+                            </a>
+                            <span class="badge badge-danger badge-pill new_badge w-25">New</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="product-ratting mb-2 text-warning">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h5 class="card-title mb-1"><a href="product_detail.html" class="text-dark">Green Dress with
+                                    details</a></h5>
+                            <div class="price font-weight-bold text-success">
+                                ₹400
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-4 col-12 mb-4">
+                    <div class="single_product card shadow-sm border-0 h-100">
+                        <div class="product_img position-relative">
+                            <a href="product_detail.html">
+                                <img src="images/pexels-francesco-ungaro-2325447.jpg" class="card-img-top img-fluid" alt="Product 3">
+                            </a>
+                            <span class="badge badge-danger badge-pill new_badge w-25">New</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="product-ratting mb-2 text-warning">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h5 class="card-title mb-1"><a href="product_detail.html" class="text-dark">Green Dress with
+                                    details</a></h5>
+                            <div class="price font-weight-bold text-success">
+                                ₹400
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12 mb-4">
+                    <div class="single_product card shadow-sm border-0 h-100">
+                        <div class="product_img position-relative">
+                            <a href="product_detail.html">
+                                <img src="images/pexels-francesco-ungaro-2325447.jpg" class="card-img-top img-fluid" alt="Product 3">
+                            </a>
+                            <span class="badge badge-danger badge-pill new_badge w-25">New</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="product-ratting mb-2 text-warning">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h5 class="card-title mb-1"><a href="product_detail.html" class="text-dark">Green Dress with
+                                    details</a></h5>
+                            <div class="price font-weight-bold text-success">
+                                ₹400
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12 mb-4">
+                    <div class="single_product card shadow-sm border-0 h-100">
+                        <div class="product_img position-relative">
+                            <a href="product_detail.html">
+                                <img src="images/pexels-francesco-ungaro-2325447.jpg" class="card-img-top img-fluid" alt="Product 3">
+                            </a>
+                            <span class="badge badge-danger badge-pill new_badge w-25">New</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="product-ratting mb-2 text-warning">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h5 class="card-title mb-1"><a href="product_detail.html" class="text-dark">Green Dress with
+                                    details</a></h5>
+                            <div class="price font-weight-bold text-success">
+                                ₹400
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12 mb-4">
+                    <div class="single_product card shadow-sm border-0 h-100">
+                        <div class="product_img position-relative">
+                            <a href="product_detail.html">
+                                <img src="images/pexels-francesco-ungaro-2325447.jpg" class="card-img-top img-fluid" alt="Product 3">
+                            </a>
+                            <span class="badge badge-danger badge-pill new_badge w-25">New</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="product-ratting mb-2 text-warning">
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <h5 class="card-title mb-1"><a href="product_detail.html" class="text-dark">Green Dress with
+                                    details</a></h5>
+                            <div class="price font-weight-bold text-success">
+                                ₹400
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat above product cards for more rows -->
+            </div>
+            
+        </div>
+    </section>
+
 
 
     <!-- ✅ jQuery and Bootstrap JS -->
