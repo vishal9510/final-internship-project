@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Demo</title>
+
+    <!-- ✅ Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ✅ Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        .badge {
+            position: absolute;
+            top: 0;
+            right: -10px;
+        }
+
+        .cart {
+            position: relative;
+            margin-right: 20px;
+        }
+
+        .product_img img {
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            border-radius: 6px;
+        }
+
+        .product_img img:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body h5 a:hover {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .card img {
+            height: 220px;
+            object-fit: contain;
+        }
+
+        .rating i {
+            color: #ffc107;
+        }
+
+        .badge-new {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .product-title {
+            font-size: 14px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card {
+            position: relative;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="header_menu" id="header_menu">
+        <div class="container-fluid px-0 shadow">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+                <a class="navbar-brand pl-3" href="index.html">
+                    <img src="assets/images/logo.png" class="img img-fluid" width="120px" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="category.html">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="search mr-3">
+                        <a href="search.html" class="btn btn-sm btn-outline-primary">Search</a>
+                    </div>
+                    <div class="cart">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart fa-2x text-primary"></i>
+                            <span class="badge badge-pill badge-primary">24</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Products</h2>
+        <div class="row">
+            <!-- Filters -->
+            <div class="col-md-3">
+                <h5>Filters</h5>
+                <div class="mb-4">
+                    <h6>Category</h6>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Category 1</a>
+                        <a href="#" class="list-group-item list-group-item-action">Category 2</a>
+                        <a href="#" class="list-group-item list-group-item-action">Category 3</a>
+                        <a href="#" class="list-group-item list-group-item-action">Category 4</a>
+                        <a href="#" class="list-group-item list-group-item-action">Category 5</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h6>Price</h6>
+                    <label for="priceRange" class="form-label d-flex justify-content-between">
+                        <span>₹100</span>
+                        <span>₹1000</span>
+                    </label>
+                    <input type="range" class="form-range" min="100" max="1000" id="priceRange">
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="row g-4">
+
+                    <!-- Product Card -->
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <div class="card p-3">
+                            <span class="badge bg-danger text-white badge-new w-25">New</span>
+                            <img src="https://via.placeholder.com/200x220?text=Product+1" class="card-img-top"
+                                alt="Product">
+                            <div class="card-body text-center">
+                                <div class="rating mb-2">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                                <a href="#" class="product-title d-block text-primary text-decoration-none">Green Dress
+                                    with details</a>
+                                <div class="price mt-1">₹400</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card p-3">
+                            <span class="badge bg-danger text-white badge-new w-25">New</span>
+                            <img src="https://via.placeholder.com/200x220?text=Product+3" class="card-img-top"
+                                alt="Product">
+                            <div class="card-body text-center">
+                                <div class="rating mb-2">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                                <a href="#" class="product-title d-block text-primary text-decoration-none">Green Dress
+                                    with details</a>
+                                <div class="price mt-1">₹400</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Duplicate product cards -->
+                    <!-- Copy and replace image/text if needed -->
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card p-3">
+                            <img src="https://via.placeholder.com/200x220?text=Product+2" class="card-img-top"
+                                alt="Product">
+                            <div class="card-body text-center">
+                                <div class="rating mb-2">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                                <a href="#" class="product-title d-block text-primary text-decoration-none">Green Dress
+                                    with details</a>
+                                <div class="price mt-1">₹400</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card p-3">
+                            <span class="badge bg-danger text-white badge-new w-25">New</span>
+                            <img src="https://via.placeholder.com/200x220?text=Product+3" class="card-img-top"
+                                alt="Product">
+                            <div class="card-body text-center">
+                                <div class="rating mb-2">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                                <a href="#" class="product-title d-block text-primary text-decoration-none">Green Dress
+                                    with details</a>
+                                <div class="price mt-1">₹400</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card p-3">
+                            <span class="badge bg-danger text-white badge-new w-25">New</span>
+                            <img src="https://via.placeholder.com/200x220?text=Product+3" class="card-img-top"
+                                alt="Product">
+                            <div class="card-body text-center">
+                                <div class="rating mb-2">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                                <a href="#" class="product-title d-block text-primary text-decoration-none">Green Dress
+                                    with details</a>
+                                <div class="price mt-1">₹400</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card p-3">
+                            <span class="badge bg-danger text-white badge-new w-25">New</span>
+                            <img src="https://via.placeholder.com/200x220?text=Product+3" class="card-img-top"
+                                alt="Product">
+                            <div class="card-body text-center">
+                                <div class="rating mb-2">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                                <a href="#" class="product-title d-block text-primary text-decoration-none">Green Dress
+                                    with details</a>
+                                <div class="price mt-1">₹400</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more product cards as needed -->
+
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer style="background-color: #f8f9fa; font-family: 'Segoe UI', sans-serif;">
+        <div class="container py-5">
+            <div class="row text-dark">
+                <!-- Company Info -->
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="footer_title mb-2">
+                        <img src="assets/images/logo.png" width="150px" alt="logo" class="img-fluid">
+                    </div>
+                    <p style="font-size: 14px;">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, totam est illum ipsum quas ad
+                        dignissimos magni veritatis natus voluptatem.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3 col-6 mb-4">
+                    <h5 class="mb-3 font-weight-bold">Quick Links</h5>
+                    <ul class="list-unstyled" style="font-size: 14px;">
+                        <li><a href="about.html" class="text-dark text-decoration-none line-height">About</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Offers & Discounts</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Get Coupon</a></li>
+                        <li><a href="contact.html" class="text-dark text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- New Products -->
+                <div class="col-md-3 col-6 mb-4">
+                    <h5 class="mb-3 font-weight-bold">New Products</h5>
+                    <ul class="list-unstyled" style="font-size: 14px;">
+                        <li><a href="#" class="text-dark text-decoration-none">Woman Cloth</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Fashion Accessories</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Man Accessories</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Rubber made Toys</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="col-md-3 col-6 mb-4">
+                    <h5 class="mb-3 font-weight-bold">Support</h5>
+                    <ul class="list-unstyled" style="font-size: 14px;">
+                        <li><a href="#" class="text-dark text-decoration-none">Frequently Asked Questions</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Report a Payment Issue</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0 text-muted" style="font-size: 13px;">Copyright ©2020 All rights reserved</p>
+        </div>
+    </footer>
+
+
+    <!-- ✅ jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
