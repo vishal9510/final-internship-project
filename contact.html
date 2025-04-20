@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9d6b86e.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    h3 {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      text-decoration: underline;
+    }
+
+    .contact-box {
+      border: 1px solid #198754;
+      border-radius: 12px;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: 0.3s;
+    }
+
+    .contact-box:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+    }
+
+    .contact-box i {
+      font-size: 30px;
+      color: #198754;
+      margin-bottom: 10px;
+    }
+
+    .contact-box h5 {
+      font-weight: 600;
+    }
+
+    .contact-box p {
+      margin: 0;
+    }
+
+    .form-card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 40px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .form-card input,
+    .form-card textarea {
+      margin-bottom: 15px;
+    }
+
+    .form-card .btn {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Contact Us</h3>
+
+  <!-- Contact Options -->
+  <div class="container mb-5">
+    <div class="row text-center">
+      <div class="col-md-4 mb-3">
+        <div class="contact-box">
+          <i class="fas fa-phone-volume"></i>
+          <h5>Let's Talk</h5>
+          <p><strong>Phone:</strong> +91 9876543210</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="contact-box">
+          <i class="fas fa-envelope-open-text"></i>
+          <h5>Drop a Line</h5>
+          <p><strong>Email:</strong> xyz@gmail.com</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="contact-box">
+          <i class="fas fa-headset"></i>
+          <h5>24x7 Support</h5>
+          <p><strong>Customer:</strong> 1800 101 303</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="form-card">
+          <h5 class="mb-4 text-center">Form</h5>
+          <form>
+            <input type="text" class="form-control" placeholder="Name" required>
+            <input type="email" class="form-control" placeholder="Email" required>
+            <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
