@@ -154,7 +154,7 @@
 
                     <!-- Product Card -->
                     <div class="col-md-4 col-sm-6 mb-3">
-                        <div class="card p-3">
+                        <div class="card p-3" onclick="goToDetails('Blue denim shirt', 'Shirt', 400, 'img1.jpg')">
                             <span class="badge bg-danger text-white badge-new w-25">New</span>
                             <img src="https://via.placeholder.com/200x220?text=Product+1" class="card-img-top"
                                 alt="Product">
@@ -263,11 +263,11 @@
                 </div>
             </div>
 
-            
+
         </div>
     </div>
 
-    
+
 
     <!-- Footer -->
     <footer style="background-color: #f8f9fa; font-family: 'Segoe UI', sans-serif;">
@@ -322,7 +322,13 @@
         </div>
     </footer>
 
-
+    <script>
+        function goToDetails(name, category, price, image) {
+            const product = { name, category, price, image };
+            localStorage.setItem("product", JSON.stringify(product));
+            window.location.href = "product-detail.html";
+        }
+    </script>
     <!-- ✅ jQuery and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
