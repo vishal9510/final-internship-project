@@ -1,116 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2d9d6b86e.js" crossorigin="anonymous"></script>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fa;
-    }
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2d9d6b86e.js" crossorigin="anonymous"></script>
+    <style>
+        .badge {
+            position: absolute;
+            top: 0;
+            right: -10px;
+        }
 
-    h3 {
-      text-align: center;
-      margin-top: 40px;
-      margin-bottom: 30px;
-      text-decoration: underline;
-    }
+        .cart {
+            position: relative;
+            margin-right: 20px;
+        }
 
-    .contact-box {
-      border: 1px solid #198754;
-      border-radius: 12px;
-      padding: 20px;
-      background: #fff;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-      transition: 0.3s;
-    }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+        }
 
-    .contact-box:hover {
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      transform: translateY(-5px);
-    }
+        h3 {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            text-decoration: underline;
+        }
 
-    .contact-box i {
-      font-size: 30px;
-      color: #198754;
-      margin-bottom: 10px;
-    }
+        .contact-box {
+            border: 1px solid #198754;
+            border-radius: 12px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: 0.3s;
+        }
 
-    .contact-box h5 {
-      font-weight: 600;
-    }
+        .contact-box:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
 
-    .contact-box p {
-      margin: 0;
-    }
+        .contact-box i {
+            font-size: 30px;
+            color: #198754;
+            margin-bottom: 10px;
+        }
 
-    .form-card {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      margin-top: 40px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-    }
+        .contact-box h5 {
+            font-weight: 600;
+        }
 
-    .form-card input,
-    .form-card textarea {
-      margin-bottom: 15px;
-    }
+        .contact-box p {
+            margin: 0;
+        }
 
-    .form-card .btn {
-      width: 100%;
-    }
-  </style>
+        .form-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-card input,
+        .form-card textarea {
+            margin-bottom: 15px;
+        }
+
+        .form-card .btn {
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
 
-  <h3>Contact Us</h3>
 
-  <!-- Contact Options -->
-  <div class="container mb-5">
-    <div class="row text-center">
-      <div class="col-md-4 mb-3">
-        <div class="contact-box">
-          <i class="fas fa-phone-volume"></i>
-          <h5>Let's Talk</h5>
-          <p><strong>Phone:</strong> +91 9876543210</p>
+    <section class="header_menu" id="header_menu">
+        <div class="container-fluid px-0 shadow">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+                <a class="navbar-brand pl-3" href="index.html">
+                    <img src="assets/images/logo.png" class="img img-fluid" width="120px" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="category.html">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="search mr-3">
+                        <a href="search.html" class="btn btn-sm btn-outline-primary">Search</a>
+                    </div>
+                    <div class="cart">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart fa-2x text-primary"></i>
+                            <span class="badge badge-pill badge-primary">24</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="contact-box">
-          <i class="fas fa-envelope-open-text"></i>
-          <h5>Drop a Line</h5>
-          <p><strong>Email:</strong> xyz@gmail.com</p>
+    </section>
+
+    <h3>Contact Us</h3>
+
+    <!-- Contact Options -->
+    <div class="container mb-5">
+        <div class="row text-center">
+            <div class="col-md-4 mb-3">
+                <div class="contact-box">
+                    <i class="fas fa-phone-volume"></i>
+                    <h5>Let's Talk</h5>
+                    <p><strong>Phone:</strong> +91 9876543210</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="contact-box">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h5>Drop a Line</h5>
+                    <p><strong>Email:</strong> xyz@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="contact-box">
+                    <i class="fas fa-headset"></i>
+                    <h5>24x7 Support</h5>
+                    <p><strong>Customer:</strong> 1800 101 303</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="contact-box">
-          <i class="fas fa-headset"></i>
-          <h5>24x7 Support</h5>
-          <p><strong>Customer:</strong> 1800 101 303</p>
+
+        <!-- Contact Form -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-card">
+                    <h5 class="mb-4 text-center">Form</h5>
+                    <form>
+                        <input type="text" class="form-control" placeholder="Name" required>
+                        <input type="email" class="form-control" placeholder="Email" required>
+                        <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
-    <!-- Contact Form -->
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="form-card">
-          <h5 class="mb-4 text-center">Form</h5>
-          <form>
-            <input type="text" class="form-control" placeholder="Name" required>
-            <input type="email" class="form-control" placeholder="Email" required>
-            <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
-            <button type="submit" class="btn btn-primary mt-2">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+    <footer style="background-color: #f8f9fa; font-family: 'Segoe UI', sans-serif;">
+        <div class="container py-5">
+            <div class="row text-dark">
+                <!-- Company Info -->
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="footer_title mb-2">
+                        <img src="assets/images/logo.png" width="150px" alt="logo" class="img-fluid">
+                    </div>
+                    <p style="font-size: 14px;">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, totam est illum ipsum quas ad
+                        dignissimos magni veritatis natus voluptatem.
+                    </p>
+                </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- Quick Links -->
+                <div class="col-md-3 col-6 mb-4">
+                    <h5 class="mb-3 font-weight-bold">Quick Links</h5>
+                    <ul class="list-unstyled" style="font-size: 14px;">
+                        <li><a href="about.html" class="text-dark text-decoration-none line-height">About</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Offers & Discounts</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Get Coupon</a></li>
+                        <li><a href="contact.html" class="text-dark text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- New Products -->
+                <div class="col-md-3 col-6 mb-4">
+                    <h5 class="mb-3 font-weight-bold">New Products</h5>
+                    <ul class="list-unstyled" style="font-size: 14px;">
+                        <li><a href="#" class="text-dark text-decoration-none">Woman Cloth</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Fashion Accessories</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Man Accessories</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Rubber made Toys</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="col-md-3 col-6 mb-4">
+                    <h5 class="mb-3 font-weight-bold">Support</h5>
+                    <ul class="list-unstyled" style="font-size: 14px;">
+                        <li><a href="#" class="text-dark text-decoration-none">Frequently Asked Questions</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Report a Payment Issue</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0 text-muted" style="font-size: 13px;">Copyright ©2020 All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
